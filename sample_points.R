@@ -112,6 +112,7 @@ df_gpx <- data.frame(ID = paste(1:nrow(sample_points), sample_points$dist_edge, 
                      Long = sample_points$x,
                      Lat = sample_points$y)
 
+
 writeOGR(obj=sample_points_all,
          dsn=   paste("/home/thesardfou/Documents/projets/Reliques/postdoc_kuebini/GIS/sample_points/sample_points_all_bis.gpx"),
          layer="waypoints",
